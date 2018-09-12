@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+	.micontenedor{
+		background-color: #0F0;
+	}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+	/*$(document).ready(function(){
+
+		//alert($("#errores h2").html()); La funcion .html sustituye un texto o codigo html por otro
+
+		//$("#errores").html("<p>Hay errores en el formulario</p>");
+
+		//$("#errores").append("<p>Hay errores en el formulario</p>"); Agrega texto a continuacion de donde se indica
+
+		//$("#errores").prepend("<p>Hay errores en el formulario 2</p>");
+
+		//$("#errores").before("<p>Hay errores en el formulario (antes) </p>"); Escribe antes del contenedor
+
+		//$("#errores").after("<p>Hay errores en el formulario (despues)</p>"); Escribe despues del contenedor
+
+		//$("#errores h2").text("Hay errores en el formulario"); //Sustituye texto pero no toma etiquetas html
+
+	}); */
+
+	function validar (){
+
+		var n_usuario=document.getElementById("usuario").value;
+
+			if(n_usuario==""){
+
+				$("#usuario").after("Rellena este campo, por favor");
+			}
+
+	}
+
+</script>
+</head>
+<body>
+
+<form>
+	
+	<input type="text" id="usuario"><br>
+	<input type="text" id="nombre"><br>
+	<input type="text" id="apellido"><br>
+	<input type="button" value="Dale" onclick="validar()">
+</form>
+
+</div>
+</body>
+</html>

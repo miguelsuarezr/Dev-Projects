@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	
+	#contenedor {
+		width: 25%;
+		background-color: #FFC;
+		margin:auto;
+		padding: 15px;
+	}
+
+</style>
+
+<script type="text/javascript">
+	
+var nombre, edad, poblacion;
+
+/* Uso del bucle while
+
+nombre=prompt("Introduce tu nombre por favor");
+	
+	while(!isNaN(nombre)) {
+		nombre=prompt("Introduce un nombre válido");
+	}
+
+edad=prompt("Introduce tu edad por favor");
+
+	while(edad<=0 || edad>105 || isNaN(edad)) {
+
+		edad=prompt("Introduce una edad válida");
+	}
+
+poblacion=prompt("Introduce población");
+	
+	while(!isNaN(poblacion)) {
+		poblacion=prompt("Introduce una población válida");
+	}
+Fin de bucle While */
+
+	
+	do{
+		nombre=prompt("Introduce un nombre válido");
+
+	}while(!isNaN(nombre)); 
+
+
+
+	do{
+
+		edad=prompt("Introduce una edad válida");
+
+	}while(edad<=0 || edad>105 || isNaN(edad)); 
+
+
+	
+	 do{
+
+		poblacion=prompt("Introduce una población válida");
+		
+	}while(!isNaN(poblacion));
+
+</script>
+
+</head>
+<body>
+
+<div id="contenedor">
+	
+<p>Nombre:
+	<script type="text/javascript">
+	
+	document.write(nombre);	
+
+	</script>
+</p>
+<p>Edad:
+	<script type="text/javascript">
+	
+	document.write(edad);	
+
+	</script>
+</p>
+<p>Población:
+	<script type="text/javascript">
+	
+	document.write(poblacion);	
+
+	</script>
+
+</p>
+
+</div>
+
+</body>
+</html>

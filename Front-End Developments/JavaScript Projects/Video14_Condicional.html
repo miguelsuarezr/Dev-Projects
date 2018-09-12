@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript">
+	
+var num1=prompt("Introduce el primer número");
+
+var num2=prompt("Introduce el segundo número");
+
+if (!isNaN(num1) && !isNaN(num2)) { //Operador negado "!"" Invierte la función inicial 
+
+
+// alert(typeof(num1)); Para saber tipo de operación
+
+	var operacion=prompt("Qué operación deseas realizar? Suma, resta, multiplicación o división?").toLowerCase();
+
+	if (operacion=="suma") {
+		alert(parseInt(num1)+parseInt(num2));
+	}
+
+	else if (operacion=="resta") {
+		alert(parseInt(num1)-parseInt(num2));
+	}
+
+	else if (operacion=="multiplicación" || operacion=="multiplicacion") {
+		alert(parseInt(num1)*parseInt(num2));
+	}
+
+	else if (operacion=="división" || operacion=="division") {
+		alert(parseInt(num1)/parseInt(num2));
+	}
+
+	else {
+
+		alert("Operación no contemplada");
+	}
+
+}
+
+else {
+
+	if (typeof(num1)=="string" || typeof(num2)=="string") {
+
+		alert("No has introducido valores numéricos");
+
+	}
+
+	else {
+
+		alert("Ha ocurrido un error no identificado");
+	}
+
+	//alert("No se pueden operar los números");
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

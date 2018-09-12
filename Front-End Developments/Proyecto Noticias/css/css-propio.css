@@ -1,0 +1,60 @@
+.container {
+    margin-top: 20px;
+}
+
+
+.text-block {
+    position: absolute;
+    bottom: 1px;
+    right: 50px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+.text-block-3 {
+	position: absolute;
+	left: 20px;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: large;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.jumbotron {
+  background: src('/imagenes/header.png') no-repeat center center fixed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header {
+	font-size: 1000%;
+	font-family: Times New Roman;
+}
+
+
+.footer_msn {
+	margin-left: 10.6rem;
+}
+
+.navbarcompleta {
+	margin-left: 11.9rem;
+}
+
+a:link {
+
+	color: black;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style>
+#banner {
+    background-color:#f00;
+    width:450px;
+    height:300px;
+    position:absolute;
+    left:400px;
+    top:50px;
+    font-size:36px;
+    text-align:center;
+}
+
+#banner2 {
+    background-color:green;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-top: 300px;
+    font-size: 40px;
+    text-align: center;
+}
+	
+#banner3 {
+    background-color:blue;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-left: 600px;
+    font-size: 40px;
+    text-align: center;
+}
+	
+#banner4 {
+    background-color:yellow;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-top: 500px;
+	margin-left: 500px;
+    font-size: 40px;
+    text-align: center;
+}
+    
+#sustitucion {
+	float: left;
+	margin: 15px;
+	width: 350px;
+	height: 200px;
+	font-size: 36px;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+   /* var z=document.getElementById("cerrar");
+
+    z.addEventListener("click", cerrar_banner, false); */
+
+    document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+    
+	var imagenes=document.querySelectorAll("body");
+	
+	for(var i=0;i<imagenes.length;i++){
+		
+		imagenes[i].addEventListener("click", carrito, false);
+	}
+
+});
+
+function cerrar_banner(){
+
+    $("#banner").remove();
+}
+
+function carrito(num){
+	
+	if(num.target==imagen1){
+		
+		$("#banner2").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+	}
+	
+	if(num.target==imagen2){
+
+		$("#banner3").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+	}
+	
+	if(num.target==imagen3){
+
+		$("#banner4").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+	}
+
+
+}
+
+</script>
+</head>
+
+
+<body>
+<div id="banner">
+Banner de prueba
+<p id="cerrar">cerrar</p>
+	</div>
+<div id="banner2">
+Banner para replace
+</div>
+
+<div id="banner3">
+Banner para replace 3
+</div>
+	
+<div id="banner4">
+Banner para replace 4
+</div>
+</body>
+</html>

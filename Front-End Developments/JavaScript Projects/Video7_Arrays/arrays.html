@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+
+  var articulos=["Zapatillas", "Camiseta", "Pantalon", "Calcetines"];
+  
+  //var articulos=new Array("Zapatillas", "Camiseta", "Pantalon", "Calcetines");
+
+  //var articulos=[]; Para cuando no se cuales articulos tendre
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+		    document.write("<p> El Primer Articulo es <strong>");
+
+        document.write(articulos[0] + "</strong> </p>");
+
+        document.write("<p>El último elemento es <strong>");
+
+        document.write(articulos[articulos.length-1] + "</strong> </p>"); //Manera de señalar el último elemento de un array
+
+        articulos.unshift("Balón");
+
+        document.write("<p>Casi nos olvidamos de agregar este elemento: <strong>");
+
+        document.write(articulos[0] + "</strong></p>")
+
+        document.write("<p>Agreguemos un elemento más al final: <strong>");
+
+       // articulos.push("Raqueta"); Agregar elemento al final del array
+
+       articulos.push(prompt("Introduce el artículo:"));
+
+        document.write(articulos[articulos.length-1] + "</strong></p>");
+
+        /* alert(articulos.length);  Esta propiedad sirve para contar cuantos elementos hay en array */
+
+        //articulos.shift(); Elimina el primer elemento del array
+
+        //articulos.pop(); Elimina el último elemento del array
+
+
+
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>
