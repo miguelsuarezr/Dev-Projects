@@ -47,14 +47,18 @@ img {
 
 
 .footer_msn {
-	margin-left: 10.6rem;
+	margin-left: 12.8rem;
 }
 
 .navbarcompleta {
-	margin-left: 11.9rem;
+	margin-left: 13.95rem;
 }
 
-a:link {
+.col-sm-8 a:link, a:visited {
 
 	color: black;
+}
+
+.table a:visited, a:link {
+	color: white;
 }

@@ -13,7 +13,7 @@
 
 <script type="text/javascript">
 	
-	/*$(document).ready(function(){
+	$(document).ready(function(){
 
 		//alert($("#errores h2").html()); La funcion .html sustituye un texto o codigo html por otro
 
@@ -29,7 +29,7 @@
 
 		//$("#errores h2").text("Hay errores en el formulario"); //Sustituye texto pero no toma etiquetas html
 
-	}); */
+	});
 
 	function validar (){
 
@@ -47,13 +47,17 @@
 <body>
 
 <form>
-	
 	<input type="text" id="usuario"><br>
 	<input type="text" id="nombre"><br>
 	<input type="text" id="apellido"><br>
 	<input type="button" value="Dale" onclick="validar()">
 </form>
-
+<div id="contenedor">
+	<div id="errores" class="micontenedor">
+	
+		<h2>Errores</h2>
+		
+	</div>
 </div>
 </body>
 </html>

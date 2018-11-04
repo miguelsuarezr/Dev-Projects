@@ -1,0 +1,27 @@
+html{
+  height:100%
+}
+body{
+  height:100%;
+}
+.intro{
+  height:100%
+}
+
+.left{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#3d231b;
+  height : 50%;
+  color : #FFF;
+
+}
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#FFF;
+  height : 50%;
+  color : #3d231b;
+}

@@ -16,9 +16,13 @@
 
 	/* Asi se hace un codigo
 	de varias lineas */
-
 </script>
+<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
 
+	
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/css-propio.css">
@@ -26,7 +30,7 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1 class="header">MSR NOTICIAS</h1>
 </div>
-
+	
 </head>
 
 <body>
@@ -99,19 +103,19 @@
 	    </thead>
 	    <tbody>
 	      <tr>
-	        <td>1) Casi muere Maduro</td>
+	        <td><a href="https://elpais.com/internacional/2018/08/06/america/1533578331_336352.html">1) Casi muere Maduro</a></td>
 	      </tr>
 	      <tr>
 	      	 <td><a href="https://www.applesfera.com/apple-1/1-000-000-000-000-dolares-apple-empresa-billon-dolares">2) Apple: Empresa del Billón</a></td>
 	      </tr>
 	      <tr>
-	      	<td>3) ¡A Programar!</td>
+	      	<td><a href="https://www.codingdojo.com/blog/7-most-in-demand-programming-languages-of-2018/">3) ¡A Programar!</a></td>
 	      </tr>
 	      <tr>
-	      	<td>4) Venezuela ganará Mundial 2022</td>
+	      	<td> <a href="http://www.el-nacional.com/noticias/mundo/venezuela-uno-los-principales-temas-discusion-onu_252924">4) Venezuela Fue Tema en la ONU</a></td>
 	      </tr>
 	      <tr>
-	      	<td>5) 10 Maneras de Ganar Peso</td>
+	      	<td><a href="https://www.salud180.com/nutricion-y-ejercicio/10-alimentos-para-ganar-peso-0">5) 10 Alimentos Para Ganar Peso</a></td>
 	      </tr>
 	    </tbody>
 	  </table>
@@ -122,14 +126,34 @@
 </div>
 
 <div class="jumbotron" style="margin-bottom:0; padding-top: 40px; padding-bottom: 40px;">
-  <p class="footer_msn">MSR Noticias © 2018. Hecho por Miguel Suárez. Todos los derechos reservados.</p>
-  <p class="footer_msn"><a href="https://www.facebook.com/miguelsuarez" target="_blank"><img src="./imagenes/fb.png" width="35px" height="35px"></a>
-<a href="https://instagram.com/miguelsuarezr" target="_blank"><img src="./imagenes/ig.png" width="35px" height="35px"></a>
-<a href="https://linkedin.com/in/miguelsuarezr" target="_blank"><img src="./imagenes/lk.png" width="35px" height="35px"></a></p>
+	<p class="footer_msn">MSR Noticias © 2018. Hecho por Miguel Suárez. Todos los derechos reservados.</p>
+	<p class="footer_msn" style="width: 200px; height: 250px;" id="mapContainer"></p>
+	<p class="footer_msn"><a href="https://www.facebook.com/miguelsuarez" target="_blank"><img src="./imagenes/fb.png" width="35px" height="35px" alt="facebook"></a>
+	<a href="https://instagram.com/miguelsuarezr" target="_blank"><img src="./imagenes/ig.png" width="35px" height="35px" alt="instagram"></a>
+	<a href="https://linkedin.com/in/miguelsuarezr" target="_blank"><img src="./imagenes/lk.png" width="35px" height="35px" alt="linkedin"></a></p>
+	
 </div>
 
 
+	
+	<script>
+var platform = new H.service.Platform({
+  'app_id': 'haPgImuaqEXnwHvrfWf9',
+  'app_code': 'fkElDtNbeGpIFYa3p3tZ-A'
+});
+	
+// Obtain the default map types from the platform object:
+var maptypes = platform.createDefaultLayers();
 
+// Instantiate (and display) a map object:
+var map = new H.Map(
+  document.getElementById('mapContainer'),
+  maptypes.normal.map,
+  {
+    zoom: 11,
+    center: { lat: 10.67, lng: -71.64 }
+  });
+	</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

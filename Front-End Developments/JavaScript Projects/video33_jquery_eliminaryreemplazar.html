@@ -14,36 +14,12 @@
     font-size:36px;
     text-align:center;
 }
-
-#banner2 {
-    background-color:green;
-    width: 500px;
-    height: 300px;
-    position: relative;
-    margin-top: 300px;
-    font-size: 40px;
-    text-align: center;
-}
 	
-#banner3 {
-    background-color:blue;
-    width: 500px;
-    height: 300px;
-    position: relative;
-    margin-left: 600px;
-    font-size: 40px;
-    text-align: center;
-}
-	
-#banner4 {
-    background-color:yellow;
-    width: 500px;
-    height: 300px;
-    position: relative;
-    margin-top: 500px;
-	margin-left: 500px;
-    font-size: 40px;
-    text-align: center;
+img {
+	float: left;
+	margin: 15px;
+	width: 350px;
+	height: 200px;
 }
     
 #sustitucion {
@@ -60,9 +36,9 @@
 <script>
 
 $(document).ready(function(){
-   /* var z=document.getElementById("cerrar");
+    /* var z=document.getElementById("cerrar");
 
-    z.addEventListener("click", cerrar_banner, false); */
+    z.addEventListener("click", cerrar_banner, false); */  //Video 33
 
     document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
     
@@ -84,19 +60,23 @@ function carrito(num){
 	
 	if(num.target==imagen1){
 		
-		$("#banner2").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+		$("#imagen1").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
 	}
 	
 	if(num.target==imagen2){
 
-		$("#banner3").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+		$("#imagen2").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
 	}
 	
 	if(num.target==imagen3){
 
-		$("#banner4").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+		$("#imagen3").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
 	}
+	
+	if(num.target==imagen4){
 
+		$("#imagen4").replaceWith("<div id='sustitucion'>Agregado al Carrito</div>");
+	}
 
 }
 
@@ -105,20 +85,16 @@ function carrito(num){
 
 
 <body>
-<div id="banner">
-Banner de prueba
-<p id="cerrar">cerrar</p>
+	<div id="banner">
+	Banner de prueba
+	<p id="cerrar">Cerrar</p>
 	</div>
-<div id="banner2">
-Banner para replace
-</div>
-
-<div id="banner3">
-Banner para replace 3
-</div>
 	
-<div id="banner4">
-Banner para replace 4
-</div>
+	<div id="carrete">
+	<img src="video33/94cdfb1955d225502630fb0f110eaf4c.jpg" id="imagen1">
+	<img src="video33/picture-4480-1477497000.jpg" id="imagen2">
+	<img src="video33/5356ab34695f535.jpg" id="imagen3">
+	<img src="video33/ayoIwl2n_400x400.jpg" id="imagen4">
+	</div>
 </body>
 </html>
